@@ -1,7 +1,7 @@
 # 베이스 이미지
 FROM amazoncorretto:17
 # 작성자 라벨 생성
-LABEL maintainer "shqkel<shqkel1863@gmail.com>"
+LABEL maintainer "bokyunghan<sjbk98@gmail.com>"
 # 버전 라벨 생성
 LABEL version "1.0.0"
 # build시에만 사용할 변수 선언
@@ -14,7 +14,7 @@ ARG PROD_REDIS_PORT
 ARG PROD_REDIS_PASSWORD
 # root 디렉토리에 app.jar복사
 COPY ${JAR_FILE_PATH} app.jar
-COPY wallets/Wallet_YH5J45K2SD3FKWR9 /Wallet_YH5J45K2SD3FKWR9
+COPY wallets/Wallet_VLAOHSDEXLPS1JCQ /Wallet_VLAOHSDEXLPS1JCQ
 # docker 이미지에 저장할 환경변수
 ENV PROD_DB_PASSWORD=${PROD_DB_PASSWORD}
 ENV PROD_DB_URL=${PROD_DB_URL}
